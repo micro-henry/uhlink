@@ -8016,6 +8016,12 @@
 		(uuid "43c039a1-906a-4eb1-b5a8-98f1f7d02f1a")
 	)
 	(junction
+		(at 340.36 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4549e456-f995-4d9c-a881-e352644158f0")
+	)
+	(junction
 		(at 53.34 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8749,6 +8755,16 @@
 	)
 	(wire
 		(pts
+			(xy 313.69 50.8) (xy 313.69 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2339432e-5f5f-4df7-8c65-c0406f60a064")
+	)
+	(wire
+		(pts
 			(xy 160.02 153.67) (xy 160.02 171.45)
 		)
 		(stroke
@@ -8996,6 +9012,16 @@
 			(type default)
 		)
 		(uuid "346f932f-aab4-4c3c-8126-79d90723c532")
+	)
+	(wire
+		(pts
+			(xy 340.36 25.4) (xy 340.36 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34a696e7-57fb-4ae3-aeff-767a298d16b9")
 	)
 	(wire
 		(pts
@@ -9426,6 +9452,16 @@
 			(type default)
 		)
 		(uuid "54ba93db-2ef4-4230-9efe-ee5b08076533")
+	)
+	(wire
+		(pts
+			(xy 337.82 48.26) (xy 340.36 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5514524d-ed62-4fbb-8fe5-3e6557d0cba3")
 	)
 	(wire
 		(pts
@@ -9879,6 +9915,16 @@
 	)
 	(wire
 		(pts
+			(xy 323.85 48.26) (xy 332.74 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71b64371-a729-4ac0-a174-1160d076739d")
+	)
+	(wire
+		(pts
 			(xy 313.69 237.49) (xy 336.55 237.49)
 		)
 		(stroke
@@ -10286,6 +10332,16 @@
 			(type default)
 		)
 		(uuid "917f0fa0-1aa4-430f-b263-51f07b05ce56")
+	)
+	(wire
+		(pts
+			(xy 313.69 48.26) (xy 316.23 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91c0c481-51e5-49b6-a42e-a1b64c646e2a")
 	)
 	(wire
 		(pts
@@ -11799,6 +11855,17 @@
 			(justify left bottom)
 		)
 		(uuid "222b2025-6d23-439c-bcfa-ae36114fdeef")
+	)
+	(label "PWR_LED_K"
+		(at 332.74 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "23e8687f-c8b6-4c4b-82a7-745e6f3f0718")
 	)
 	(label "HUB_USB2D+"
 		(at 92.71 113.03 180)
@@ -15349,6 +15416,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 320.04 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "418d5164-00b9-4c21-b35a-b6ef94bde63d")
+		(property "Reference" "D4"
+			(at 318.4525 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 318.4525 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 320.04 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 320.04 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 320.04 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "764129d3-0c6c-49df-9252-06913a89e3aa")
+		)
+		(pin "1"
+			(uuid "8f80ee3a-85f5-46d7-b9da-c0f3331d9fbe")
+		)
+		(instances
+			(project "uhlink"
+				(path "/1a3e6ec6-059a-4aeb-a36d-5a93e54402bd"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Crystal_Small")
 		(at 35.56 121.92 90)
 		(mirror x)
@@ -16935,6 +17070,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 313.69 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6cfdd6ae-94cc-4863-a62e-7f2c7dfb5866")
+		(property "Reference" "#PWR049"
+			(at 313.69 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 313.69 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 313.69 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 313.69 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 313.69 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e03739a-36c2-4722-8589-4be9ddbe6d40")
+		)
+		(instances
+			(project "uhlink"
+				(path "/1a3e6ec6-059a-4aeb-a36d-5a93e54402bd"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 339.09 222.25 90)
 		(unit 1)
@@ -17738,6 +17939,74 @@
 			(project "uhlink"
 				(path "/1a3e6ec6-059a-4aeb-a36d-5a93e54402bd"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 335.28 48.26 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "893aed78-0f78-45ac-ac6a-38e265028e90")
+		(property "Reference" "R37"
+			(at 335.28 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k5"
+			(at 335.28 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 335.28 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 335.28 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "11d98247-3067-420b-9768-b968d8e46b62")
+		)
+		(pin "1"
+			(uuid "bbf31b41-835c-4d2e-9e55-7d610f01bec9")
+		)
+		(instances
+			(project "uhlink"
+				(path "/1a3e6ec6-059a-4aeb-a36d-5a93e54402bd"
+					(reference "R37")
 					(unit 1)
 				)
 			)
